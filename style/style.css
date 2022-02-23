@@ -1,0 +1,212 @@
+        body {
+            background-color: rgb(37, 37, 37);
+        }
+        header {
+            width: 100%;
+            background-image: linear-gradient(180deg, #112F61, #100C40);
+            height: 15vh;
+            max-height: 15vh;
+           display: flex;
+           justify-content: space-between;
+           
+        }
+        .teste {
+            background-image: url('https://www.evatarot.com.br/images/amor-dinheiro-sucesso.png');
+            background-repeat: no-repeat;
+            width: 340px;
+            height: 60%;
+            margin-top: 20px;
+        }
+        h1 {  
+            background-color: rgba(245, 245, 245, 0.034);
+            border-radius: 10px;
+            padding: 1rem;
+            margin: auto;
+            margin-left: 50px;
+            font-family: 'Petit Formal Script', cursive;     
+            font-size: 50px;
+        }
+        .pulse {
+            margin: 20px;
+            width: 50px;
+            height: 50px;
+            border: solid rgba(255, 255, 255, 0.726);
+            border-radius: 50%;
+            -webkit-animation: pulse 1.0s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 white;
+            }
+            100% {
+                box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+            }
+        }
+        main {
+            background-image: linear-gradient(180deg, #100C40, #112F61);
+            height: 85vh;
+        }
+        .taro {
+          
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #photoOne {
+            background-image: url('https://cdn.pixabay.com/photo/2021/02/15/07/52/the-fool-6016940_960_720.jpg');
+            transform: rotatey(0deg);
+        }
+        #photoOne:active {
+            transform: rotatey(180deg);
+            transition: 400ms;
+        }
+        #photo2 {
+            background-image: url('https://cdn.pixabay.com/photo/2021/02/15/07/46/empress-6016923_960_720.jpg');
+            transform: rotatey(0deg)
+        }
+        #photo2:active {
+            transform: rotatey(180deg);
+            transition: 400ms;
+        }
+        #photo3 {
+            background-image: url('https://cdn.pixabay.com/photo/2021/02/15/07/46/chariot-6016921_960_720.jpg');
+            transform: rotatey(0deg)
+        }
+        #photo3:active {
+            transform: rotatey(180deg);
+            transition: 400ms;
+        }
+        .photo {
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 25%;
+            height: 90%;
+        }
+        .photo:hover {
+            width: 25%;
+            height: 85%;
+            transition: 400ms;
+            -webkit-animation: pulse 1.0s infinite;
+        }
+        .photo:not(:hover) {
+            transition: 400ms;
+        }
+        .whatsapp-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+            -webkit-animation: pulse 1.0s infinite;
+        }
+        .fa-whatsapp {
+            margin-top: 16px;
+        }
+        footer {
+            background-image: linear-gradient(180deg, #15233d, rgb(37, 37, 37));
+            color: white;
+            width: 100%;
+            height: 100px;
+        }
+        .footer {
+            margin: auto;
+            width: 40%;
+            text-align: center;
+            font-family: 'arial';
+            font-size: 15px;
+        }
+        hr {
+            margin: 0;
+            max-width: 100%;
+        }
+        p {
+            margin: 0%;
+            padding: 0;
+        }
+        /*/////////////////////////////////////////////////////////////////////////////////////////////////*/ 
+        @media screen and (max-width: 450px) {
+          header{
+                width: 100%;
+                background-image: linear-gradient(180deg, #112F61, #100C40);
+                height: 15vh;
+                max-height: 15vh;
+                display: flex;
+                justify-content: center;
+            }
+            .teste {
+                display: none;
+            }  
+            h1 {
+                border-radius: 10px;
+                padding: 1rem;
+                text-align: center;
+                margin-left: 10px;
+               
+                font-size: 40px;
+            }
+            .pulse {
+               display: none;
+            }
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+                }
+                ;
+            }
+            main {
+                background-image: linear-gradient(180deg, #100C40, #112F61);
+                height: 75vh;
+               
+            }
+            .taro {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .photo {
+                border-radius: 10px;
+                border: solid;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 90%;
+                height: 80%;
+            }
+            .photo:hover {
+                width:100%;
+                height: 90%;
+            }
+            #photoOne {
+                background-image: url('https://cdn.pixabay.com/photo/2021/02/15/07/52/the-fool-6016940_960_720.jpg');
+                transform: rotatey(0deg);
+            }
+            #photoOne:active {
+                transform: rotatez(720deg);
+                transition: 1500ms;
+            }
+            #photo2 {
+              display: none;
+            }  
+            #photo3 {
+               display: none;
+            } 
+            .footer{
+                font-size: 13px;
+                word-wrap: break-word;
+                width: 90%;
+            }
+        }
